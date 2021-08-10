@@ -1,3 +1,8 @@
+'''
+Time Complexity: O(nlogn)
+'''
+
+
 def quick_sort(sequence):
 
     length = len(sequence) # declare length
