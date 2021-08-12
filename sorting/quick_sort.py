@@ -1,7 +1,6 @@
 '''
-Time Complexity: O(nlogn)
+Time Complexity: O(n log n)
 '''
-
 
 def quick_sort(sequence):
 
