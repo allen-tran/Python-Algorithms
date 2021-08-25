@@ -11,7 +11,7 @@ Step 3++:
 '''
 
 def convert(dec):
-    assert dec >= 0 and int(dec) == dec, "Decimal number must be a postive integer"
+    assert int(dec) == dec, "Decimal number must be an integer"
     if dec == 0:
         return dec
     else:
