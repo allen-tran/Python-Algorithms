@@ -4,7 +4,7 @@ Time: O(nlogn * m)
 '''
 
 def group(strs):
-    # key: sorted word, value: LISTS of original word
+    # key: sorted word, value: LISTS of original words
     dict = {}
     for word in strs:
         sortedword = "".join(sorted(word))
