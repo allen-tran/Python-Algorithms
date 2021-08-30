@@ -1,5 +1,7 @@
 '''
 #70 easy
+Time: O(n)
+- similar to fibonacci series
 '''
 
 def climb(n):
