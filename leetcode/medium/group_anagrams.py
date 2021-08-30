@@ -1,8 +1,10 @@
 '''
 #49 medium
+Time: O(nlogn * m)
 '''
 
 def group(strs):
+    # key: sorted word, value: original word
     dict = {}
     for word in strs:
         sortedword = "".join(sorted(word))
