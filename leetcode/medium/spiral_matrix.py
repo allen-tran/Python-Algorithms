@@ -26,7 +26,7 @@ def spiral(matrix):
         # this is a double check to account the edge cases where the matrix is either straight vertically or straight horizontally
         if not (left < right and top < bottom):
             break
-
+            
         # get every i in the bottom row
         for k in range(right - 1, left - 1, -1):
             res.append(matrix[bottom - 1][k])
