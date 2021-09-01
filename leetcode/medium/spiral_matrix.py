@@ -23,6 +23,7 @@ def spiral(matrix):
             res.append(matrix[j][right - 1])
         right -= 1 # it will shift right bound over to the left by 1
 
+        # this is a double check to account the edge cases where the matrix is either straight vertically or straight horizontally
         if not (left < right and top < bottom):
             break
 
