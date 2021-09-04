@@ -2,7 +2,7 @@
 Amazon variation of group anagrams
 '''
 
-def remove(set):
+def remove(strs):
     setList = set()
     result = []
     for word in strs:
