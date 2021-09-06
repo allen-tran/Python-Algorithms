@@ -24,5 +24,6 @@ def rotate(a):
         # shrink the square    
         l += 1
         r -= 1
-        
+
+    # return the new matrix (same one but modified)    
     return a
