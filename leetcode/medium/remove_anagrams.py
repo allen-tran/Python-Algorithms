@@ -3,6 +3,7 @@ Amazon variation of group anagrams
 '''
 
 def remove(strs):
+    # set list to have only the unique anagrams
     setList = set()
     result = []
     for word in strs:

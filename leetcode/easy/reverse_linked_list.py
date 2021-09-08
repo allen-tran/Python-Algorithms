@@ -13,9 +13,9 @@ def reverse(head):
         head = head.next
         # the next val after head is previous
         temp.next = prev
-        # assign to 
+        # assign to previous
         prev = temp
-            
+    # return previous to have it reversed       
     return prev
 
 '''
@@ -27,5 +27,15 @@ def reverse(head):
     curr = head
     nextN = None
 
-    while (curr is not None):
-        
+    # while current is not None
+    while curr:
+        # assign the next node to be the node after current
+        nextN = curr.next
+        # switch the arrow from current to be pointed towards previous
+        curr.next = prev
+        # advance previous
+        prev = curr
+        # update current to the be the next node
+        curr = nextN
+    # return previous to have it reversed
+    return prev

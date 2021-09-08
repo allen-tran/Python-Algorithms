@@ -3,8 +3,10 @@
 '''
 # LINEAR
 def maxSubArray(nums):
-    maxSub = nums[0] # take the first index, this will take care of a list with just one number
-    currSum = 0 # this will update with the sums and have the largest at the end
+    # take the first index, this will take care of a list with just one number
+    maxSub = nums[0] 
+    # this will update with the sums and have the largest at the end
+    currSum = 0 
 
     for n in nums:
         # we will never take the leading negative numbers
@@ -17,4 +19,5 @@ def maxSubArray(nums):
         maxSub = max(maxSub, currSum)
     return maxSub
 
+# test
 print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))

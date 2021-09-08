@@ -11,7 +11,6 @@ def twoSum(nums, target: int):
     return
 
 print(twoSum([2,6,3,5,8], 5))
-
 '''
 
 # HASH MAP aka One Pass
@@ -31,3 +30,5 @@ def twoSum(nums, target):
             return [prevMap[diff], i]
         prevMap[n] = i
     return
+
+print(twoSum([2,6,3,5,8], 5))
