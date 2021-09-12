@@ -13,3 +13,5 @@ def single(nums):
     for i in dict:
         if len(dict[i]) < 2:
             return i
+
+print(single([1,2,3,54,3,2,1,24,5,4]))
