@@ -1,5 +1,5 @@
 '''
-#206 easy
+https://leetcode.com/problems/reverse-linked-list/
 '''
 
 def reverse(head):

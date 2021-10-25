@@ -1,8 +1,8 @@
 '''
-#70 easy
-Time: O(n)
-- uses fibonacci sequence
+https://leetcode.com/problems/climbing-stairs/
+O(n)
 '''
+
 
 def climb(n):
     # the first two stairs will only have either one or two distinct ways to get up
@@ -20,7 +20,8 @@ def climb(n):
             a = b
             # make b the largest number (newest number)
             b = c
-    # we return b because it will always be the right most, greatsest number        
+    # we return b because it will always be the right most, greatsest number
     return b
+
 
 print(climb(5))

@@ -1,7 +1,8 @@
 '''
-#49 medium
-Time: O(nlogn * m)
+https://leetcode.com/problems/group-anagrams/
+O(nlogn * m)
 '''
+
 
 def group(strs):
     # key: sorted word, value: LISTS of original words

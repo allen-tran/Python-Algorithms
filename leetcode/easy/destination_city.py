@@ -1,3 +1,8 @@
+'''
+https://leetcode.com/problems/destination-city/
+'''
+
+
 def destCity(paths):
     outgoing_count = {}
     for path in paths:   

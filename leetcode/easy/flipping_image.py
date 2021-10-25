@@ -1,5 +1,5 @@
 '''
-#832 easy
+https://leetcode.com/problems/flipping-an-image/
 '''
 
 def flip(image):

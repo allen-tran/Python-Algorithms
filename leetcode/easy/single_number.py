@@ -1,5 +1,5 @@
 '''
-#136 easy
+https://leetcode.com/problems/single-number/
 '''
 
 def single(nums):
