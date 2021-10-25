@@ -1,10 +1,12 @@
 '''
-#121 easy
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 '''
+
 
 def buy_sell(prices):
     # create pointers to the stock prices
-    l, r =  0, 1
+    l, r = 0, 1
     # create max variable to compare to
     maxP = 0
 
@@ -19,6 +21,6 @@ def buy_sell(prices):
             # if we found a value smaller than left, we want to update left to that value
             l = r
         # keep incrementing no matter what
-        r+=1
-    
+        r += 1
+
     return maxP

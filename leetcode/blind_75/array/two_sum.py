@@ -1,5 +1,5 @@
 '''
-#1 easy
+https://leetcode.com/problems/two-sum/
 '''
 # BRUTE FORCE
 '''
@@ -17,11 +17,12 @@ print(twoSum([2,6,3,5,8], 5))
 # Time: O(n)
 # Space: O(n)
 
+
 def twoSum(nums, target):
     # every previous element we visit will be stored in here
     # value : index
     prevMap = {}
-    # i id index and value is n 
+    # i id index and value is n
     for i, n in enumerate(nums):
         # we need to first check to see if the difference is already in the hashmap or not
         diff = target - n
@@ -31,4 +32,5 @@ def twoSum(nums, target):
         prevMap[n] = i
     return
 
-print(twoSum([2,6,3,5,8], 5))
+
+print(twoSum([2, 6, 3, 5, 8], 5))
