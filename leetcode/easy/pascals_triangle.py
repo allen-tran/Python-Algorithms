@@ -1,8 +1,13 @@
+'''
+https://leetcode.com/problems/pascals-triangle/
+'''
+
+
 def generate(self, numRows: int):
     # create first list within the list
     res = [[1]]
 
-    # iterate through only n-1 because we already made the first row   
+    # iterate through only n-1 because we already made the first row
     for i in range(numRows - 1):
         # add zeros to both side to add
         temp = [0] + res[-1] + [0]
@@ -12,6 +17,6 @@ def generate(self, numRows: int):
         for j in range(len(res[-1])+1):
             # add to the row with the numbers added
             row.append(temp[j] + temp[j+1])
-        # add the rows to the res  
+        # add the rows to the res
         res.append(row)
     return res

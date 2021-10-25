@@ -1,9 +1,14 @@
+'''
+https://leetcode.com/problems/repeated-dna-sequences/
+'''
+
+
 def findRepeatedDnaSequences(s):
     # hashamp of string key and occurances value
     seenMap = {}
     res = []
-    i= 0
-    
+    i = 0
+
     while i+10 <= len(s):
         tmp = s[i:i+10]
         if tmp not in seenMap:
@@ -11,5 +16,5 @@ def findRepeatedDnaSequences(s):
         else:
             if tmp not in res:
                 res.append(tmp)
-        i+=1
+        i += 1
     return res

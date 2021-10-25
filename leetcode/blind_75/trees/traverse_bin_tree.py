@@ -1,9 +1,14 @@
+'''
+https://leetcode.com/problems/binary-tree-level-order-traversal/
+'''
+
 from collections import deque
+
 
 def levelOrder(root):
     if not root:
         return None
-        
+
     q = deque()
     q.append(root)
     res = []
@@ -18,6 +23,6 @@ def levelOrder(root):
             if rem.right:
                 q.append(rem.right)
             new_list.append(rem.val)
-        res.append(new_list)     
-        
+        res.append(new_list)
+
     return res

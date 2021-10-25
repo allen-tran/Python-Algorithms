@@ -1,8 +1,12 @@
 '''
 https://leetcode.com/problems/two-sum/
 '''
-# BRUTE FORCE
+
 '''
+BRUTE FORCE
+O(n^2)
+o(n)
+
 def twoSum(nums, target: int):
     for i in range(len(nums)):
         for j in range(i+1, len(nums)):
@@ -13,9 +17,11 @@ def twoSum(nums, target: int):
 print(twoSum([2,6,3,5,8], 5))
 '''
 
-# HASH MAP aka One Pass
-# Time: O(n)
-# Space: O(n)
+'''
+HASH MAP aka One Pass
+O(n)
+O(n)
+'''
 
 
 def twoSum(nums, target):

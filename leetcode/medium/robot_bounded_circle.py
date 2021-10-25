@@ -1,6 +1,7 @@
 '''
-#1041 medium
+https://leetcode.com/problems/robot-bounded-in-circle/
 '''
+
 
 def robot(instructions):
     # start robot not facing in X direction and make it face Y direction forward
@@ -8,7 +9,7 @@ def robot(instructions):
     # position at (0, 0)
     posX, posY = 0, 0
 
-    # loop through string   
+    # loop through string
     for i in instructions:
         if i == "G":
             # we have to move the robot in whatever direction it is facing and add it to wherever it is in position
@@ -20,8 +21,9 @@ def robot(instructions):
         elif i == "R":
             # we would have to negate the negative X direction (left) and make it position and face it up
             dirX, dirY = dirY, -1*dirX
-    # if the position is back at the origin or if the direciton is not NOT chagned, we can say the robot is truly bouded in a circle    
-    return (posX, posY) == (0,0) or (dirX, dirY) != (0,1)
+    # if the position is back at the origin or if the direciton is not NOT chagned, we can say the robot is truly bouded in a circle
+    return (posX, posY) == (0, 0) or (dirX, dirY) != (0, 1)
+
 
 # test
 print(robot("GGLLGGLL"))

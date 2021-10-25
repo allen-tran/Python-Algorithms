@@ -1,8 +1,10 @@
 '''
-#572 easy (should be medium imo)
+https://leetcode.com/problems/subtree-of-another-tree/
 '''
+
+
 class TreeNode:
-    def __init__(self, val = 0, left = None, right = None):
+    def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
@@ -20,7 +22,7 @@ def isSubtree(root, subRoot):
         # recursively either goes down the left side or right side
         return isSubtree(root.left, subRoot) or isSubtree(root.right, subRoot)
 
-        
+
 def isSubEqual(s, t):
     # makes sure that if one of them are empty, both are empty
     if s == None or t == None:

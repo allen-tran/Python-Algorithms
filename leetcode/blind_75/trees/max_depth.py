@@ -1,7 +1,14 @@
+'''
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
+'''
+
+
 import collections
 from collections import deque
 
 # breadth first search
+
+
 def maxDepth(root):
     if not root:
         return 0
@@ -11,7 +18,7 @@ def maxDepth(root):
 
     while q:
         qsize = len(q)
-        count+=1
+        count += 1
         for i in range(qsize):
             rem = q.popleft()
             if rem.left:
@@ -19,6 +26,7 @@ def maxDepth(root):
             if rem.right:
                 q.append(rem.right)
     return count
+
 
 '''
 depth first search

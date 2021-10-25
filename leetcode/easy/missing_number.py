@@ -1,5 +1,5 @@
 '''
-#268 easy
+https://leetcode.com/problems/missing-number/
 '''
 
 def missingNumber(self, nums: List[int]) -> int:

@@ -1,10 +1,11 @@
 '''
-#217 easy
+https://leetcode.com/problems/contains-duplicate/
 '''
+
 
 def containsDuplicate(self, nums: List[int]) -> bool:
     dict = {}
-        
+
     for i in range(len(nums)):
         if nums[i] not in dict:
             dict[nums[i]] = [i]
@@ -12,5 +13,5 @@ def containsDuplicate(self, nums: List[int]) -> bool:
             dict[nums[i]].append(i)
         if len(dict[nums[i]]) >= 2:
             return True
-            
+
     return False

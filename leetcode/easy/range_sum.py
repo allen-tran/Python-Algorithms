@@ -1,3 +1,7 @@
+'''
+https://leetcode.com/problems/range-sum-query-immutable/
+'''
+
 class NumArray:
     dict = {}
     def __init__(self, nums):
