@@ -8,6 +8,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 def removeNthFromEnd(head, n):
     if not head:
         return []
@@ -15,7 +16,7 @@ def removeNthFromEnd(head, n):
     dummy.next = head
     slow = dummy
     fast = dummy
-    
+
     for i in range(n+1):
         fast = fast.next
     while fast:

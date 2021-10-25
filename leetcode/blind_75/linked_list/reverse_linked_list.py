@@ -2,9 +2,10 @@
 https://leetcode.com/problems/reverse-linked-list/
 '''
 
+
 def reverse(head):
     prev = None
-    
+
     # while head is not null
     while (head):
         # create a temperary variable and assign it as head's value
@@ -15,12 +16,14 @@ def reverse(head):
         temp.next = prev
         # assign to previous
         prev = temp
-    # return previous to have it reversed       
+    # return previous to have it reversed
     return prev
+
 
 '''
 Alternate way to do it
 '''
+
 
 def reverse(head):
     prev = None

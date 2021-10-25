@@ -6,4 +6,3 @@ def border(mat):
 
         for i in range(left, r-1):
             res.append(mat[t][i])
-

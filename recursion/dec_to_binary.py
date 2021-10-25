@@ -10,11 +10,13 @@ Step 3++:
     repeat the steps until the quotient is equal to 0
 '''
 
+
 def convert(dec):
     assert int(dec) == dec, "Decimal number must be an integer"
     if dec == 0:
         return dec
     else:
         return (dec % 2) + 10 * convert(dec // 2)
+
 
 print(convert(10))

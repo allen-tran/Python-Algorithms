@@ -3,6 +3,7 @@ Time Complexity: O(n^2) (two nested lists)
 Sorted and Unsorted Sub-list
 '''
 
+
 def insertion_sort(list_a):
     # getting the range from 1-16
     indexing_length = range(1, len(list_a))
@@ -19,5 +20,6 @@ def insertion_sort(list_a):
             # we can go ahead and decrement i to go down the list and check to see if the values are sorted
             i -= 1
     return list_a
+
 
 print(insertion_sort([7, 4, 3, 56, 67, 4, 3, 5, 7, 3, 232, 5, 53, 2, 32, 435]))

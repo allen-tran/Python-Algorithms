@@ -4,4 +4,5 @@ def comparison(n):
     print(n)
     return comparison(n//2)
 
+
 print(comparison(90))

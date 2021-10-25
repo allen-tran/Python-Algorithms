@@ -2,10 +2,12 @@
 https://leetcode.com/problems/range-sum-query-immutable/
 '''
 
+
 class NumArray:
     dict = {}
+
     def __init__(self, nums):
-        
+
         self.dict[0] = nums[0]
         for i in range(1, len(nums)):
             self.dict[i] = self.dict[i-1] + nums[i]

@@ -7,6 +7,7 @@ gcd(a, 0) = a
 gcd(a, b) = gcd(b, a mod b)
 '''
 
+
 def gcd(a, b):
     assert int(a) == a and int(b) == b, 'Numbers must be integers.'
     if a < 0:
@@ -17,5 +18,6 @@ def gcd(a, b):
         return a
     else:
         return gcd(b, a % b)
-    
+
+
 print(gcd(16, 4))

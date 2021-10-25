@@ -1,5 +1,3 @@
-
-
 def sort_matrices(mat, n):
     setNum = set()
 
@@ -13,6 +11,7 @@ def sort_matrices(mat, n):
             break
     return missing_num, mat
 
+
 def missing_matrices(mat):
     res = []
     n = set("?") | set([i for i in list(range(1, 17))])
@@ -24,4 +23,5 @@ def missing_matrices(mat):
     res.sort()
     return [mat[i] for num, i in res]
 
-print(missing_matrices([["1"],["2"], ["3"]]))
+
+print(missing_matrices([["1"], ["2"], ["3"]]))
