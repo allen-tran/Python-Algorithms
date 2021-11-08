@@ -1,0 +1,28 @@
+SELECT BUYER_ID 
+FROM house 
+JOIN price on house.HOUSE_ID = price.HOUSE_ID
+WHERE price.PRICE >= 100 
+HAVING count(HOUSE_ID) > 1
+GROUP BY BUYER_ID
+
+
+SELECT house.BUYER_ID, SUM(price.PRICE) AS TOTAL_WORTH
+FROM house
+LEFT JOIN price ON house.HOUSE_ID = price.HOUSE_ID
+GROUP BY house.BUYER_ID
+HAVING SUM(price.PRICE) >= 100 and COUNT(house.HOUSE_ID) > 1
+
+SELECT house.BUYER_ID
+     , SUM(price.PRICE) AS TOTAL_WORTH
+  FROM house
+  LEFT 
+  JOIN price
+    ON house.HOUSE_ID = price.HOUSE_ID
+ GROUP 
+    BY house.BUYER_ID
+ HAVING COUNT(house.HOUSE_ID) > 1 and TOTAL_WORTH >= 100
+
+ SELECT house.BUYER_ID , SUM(price.PRICE) AS TOTAL_WORTH
+FROM house 
+JOIN price
+USING(HOUSE_ID) GROUP BY house.BUYER_ID HAVING  SUM(price.PRICE) > 100 AND COUNT(house.BUYER_ID) > 1;
