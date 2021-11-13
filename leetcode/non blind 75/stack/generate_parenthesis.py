@@ -1,3 +1,8 @@
+'''
+https://leetcode.com/problems/generate-parentheses/submissions/
+'''
+
+
 def generateParenthesis(n):
     '''
     only going to add oen parenthesis if open < n
@@ -23,5 +28,6 @@ def generateParenthesis(n):
 
     backtrack(0, 0)
     return res
+
 
 print(generateParenthesis(3))
