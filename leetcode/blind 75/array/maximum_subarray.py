@@ -5,6 +5,8 @@ https://leetcode.com/problems/maximum-subarray/
 
 
 def maxSubArray(nums):
+    # tldr: maxSub will take the maximum with each iteration. currSum will go the longest run without being negative
+    # and maxSub will test it out and see if it should accept the value or not as the max
     # take the first index, this will take care of a list with just one number
     maxSub = nums[0]
     # this will update with the sums and have the largest at the end

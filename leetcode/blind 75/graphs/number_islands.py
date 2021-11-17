@@ -6,7 +6,7 @@ https://leetcode.com/problems/number-of-islands/
 import collections
 
 
-def numIslands(grid):
+def numIslands(grid) -> int:
     if not grid:
         return 0
 

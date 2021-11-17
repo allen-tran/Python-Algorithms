@@ -9,7 +9,7 @@ def quick_sort(sequence):
     if length <= 1:  # when sequence is empty we can just return the empty sequence
         return sequence
     else:  # if not, lets take the last number in the list and store it as a pivot
-        pivot = sequence.pop()
+        pivot = sequence.pop(0)
 
     items_greater = []  # create greater than list
     items_lower = []  # create less than list
