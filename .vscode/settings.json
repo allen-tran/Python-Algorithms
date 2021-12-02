@@ -1,8 +1,0 @@
-{
-  "workbench.colorTheme": "City Lights",
-  "workbench.preferredDarkColorTheme": "City Lights",
-  "editor.bracketPairColorization.enabled": true,
-  "workbench.colorCustomizations": {
-    "terminal.foreground": "#c5bfb7"
-  }
-}
