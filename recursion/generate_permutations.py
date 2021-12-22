@@ -2,6 +2,7 @@
 methods to generate permuatations of a list
 '''
 
+
 def permutate(nums):
     if not nums:
         return []
@@ -16,4 +17,5 @@ def permutate(nums):
             res.append([m] + p)
     return res
 
-print(permutate([1,2,3,4,5]))
+
+print(permutate([1, 2, 3, 4, 5]))
