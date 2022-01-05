@@ -21,7 +21,7 @@ def binary_search(sequence, item):
     return None
 
 
-sequence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 11]
-item = 6
+sequence = [11]
+item = 11
 
 print(binary_search(sequence, item))
