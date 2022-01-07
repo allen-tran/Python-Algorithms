@@ -3,7 +3,7 @@ https://leetcode.com/problems/next-permutation/
 """
 
 
-def nextPermutation(nums):
+def next_permutation(nums):
     """
     Do not return anything, modify nums in-place instead.
     """
