@@ -3,7 +3,7 @@ https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k
 """
 
 
-def minimumDifference(self, nums: List[int], k: int) -> int:
+def minimumDifference(nums, k):
     nums.sort()
 
     l, r = 0, k - 1
