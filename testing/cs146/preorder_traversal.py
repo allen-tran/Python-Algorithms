@@ -11,7 +11,7 @@ class Graph:
         self.vertices = vertices
         self.adjList = [None] * (vertices)
         i = 0
-        while (i < vertices):
+        while i < vertices:
             self.adjList[i] = Deque()
             i += 1
 
@@ -20,11 +20,11 @@ class Graph:
 
     def printGraph(self):
         i = 0
-        while (i < self.vertices):
-            if (len(self.adjList[i] > 0)):
+        while i < self.vertices:
+            if len(self.adjList[i] > 0):
                 print("Vertex " + str(i) + " is connected to: ")
                 j = 0
-                while (j < len(self.adjList[i])):
+                while j < len(self.adjList[i]):
                     print(str(self.adjList[i].get(j)) + " ", end="")
                     j += 1
                 print()
@@ -33,14 +33,14 @@ class Graph:
     def DFSRecursion(self, startVertex):
         self.dfs(startVertex, self.visited)
 
-    def dfs(self, start: int,  visited: list):
+    def dfs(self, start: int, visited: list):
         visited[int(start)] = True
         print(str(start) + " ", end="")
         visited[int(start)] = True
         i = 0
-        while (i < len(self.adjList[int(start)])):
+        while i < len(self.adjList[int(start)]):
             destination = self.adjList[int(start)][i]
-            if (not visited[destination]):
+            if not visited[destination]:
                 self.dfs(destination, visited)
             i += 1
 
@@ -49,9 +49,9 @@ class Graph:
         vertices = 13
         graph = Graph(vertices)
         print("Enter pairs : ")
-        while (True):
+        while True:
             pair = input()
-            if (pair == "stop"):
+            if pair == "stop":
                 break
             splitted = pair.split(" ")
             edgeFrom = int(splitted[0])
@@ -62,19 +62,19 @@ class Graph:
         print("Preorder: ", end="")
         graph.DFSRecursion(source)
 
-        while (True):
+        while True:
             count = 0
             i = 0
-            while (i < len(self.visited)):
-                if (self.visited[i] == True):
+            while i < len(self.visited):
+                if self.visited[i] == True:
                     count += 1
                 i += 1
-            if (count == vertices):
+            if count == vertices:
                 break
             else:
                 i = 0
-                while (i < len(self.visited)):
-                    if (self.visited[i] == False):
+                while i < len(self.visited):
+                    if self.visited[i] == False:
                         graph.DFSRecursion(i)
                     i += 1
 

@@ -1,6 +1,6 @@
-'''
+"""
 methods to generate permuatations of a list
-'''
+"""
 
 
 def permutate(nums):
@@ -12,7 +12,7 @@ def permutate(nums):
 
     for i in range(len(nums)):
         m = nums[i]
-        remList = nums[:i] + nums[i+1:]
+        remList = nums[:i] + nums[i + 1 :]
         for p in permutate(remList):
             res.append([m] + p)
     return res

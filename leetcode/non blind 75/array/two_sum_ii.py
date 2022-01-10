@@ -1,10 +1,10 @@
-'''
+"""
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-'''
+"""
 
 
 def twoSum(numbers, target):
-    l, r = 0, len(numbers)-1
+    l, r = 0, len(numbers) - 1
 
     while l < r:
         currSum = numbers[l] + numbers[r]
@@ -14,4 +14,4 @@ def twoSum(numbers, target):
         elif currSum > target:
             r -= 1
         else:
-            return [l+1, r+1]
+            return [l + 1, r + 1]

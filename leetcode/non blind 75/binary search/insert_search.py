@@ -1,11 +1,11 @@
-'''
+"""
 https://leetcode.com/problems/search-insert-position/submissions/
-'''
+"""
 
 
 def searchInsert(nums, target):
-    l, r = 0, len(nums)-1
-    mid = float('inf')
+    l, r = 0, len(nums) - 1
+    mid = float("inf")
     while l <= r:
         mid = (r - l) // 2 + l
 

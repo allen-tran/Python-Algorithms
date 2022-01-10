@@ -1,14 +1,14 @@
-'''
+"""
 https://leetcode.com/problems/generate-parentheses/submissions/
-'''
+"""
 
 
 def generateParenthesis(n):
-    '''
+    """
     only going to add oen parenthesis if open < n
     only add a closing parenthesis if closed < open
     valid IFF open == closed == n
-    '''
+    """
 
     stack = []
     res = []
@@ -19,11 +19,11 @@ def generateParenthesis(n):
             return
         if open_count < n:
             stack.append("(")
-            backtrack(open_count+1, closed_count)
+            backtrack(open_count + 1, closed_count)
             stack.pop()
         if closed_count < open_count:
             stack.append(")")
-            backtrack(open_count, closed_count+1)
+            backtrack(open_count, closed_count + 1)
             stack.pop()
 
     backtrack(0, 0)

@@ -1,12 +1,12 @@
-'''
+"""
 Time Complexity: O(n log n)
-'''
+"""
 
 
 def merge_sort(sequence):
     if len(sequence) > 1:
-        left_arr = sequence[:len(sequence) // 2]
-        right_arr = sequence[len(sequence)//2:]
+        left_arr = sequence[: len(sequence) // 2]
+        right_arr = sequence[len(sequence) // 2 :]
 
         merge_sort(left_arr)
         merge_sort(right_arr)

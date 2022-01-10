@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/destination-city/
-'''
+"""
 
 
 def destCity(paths):

@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/add-two-numbers/
-'''
+"""
 
 
 class ListNode:
@@ -17,7 +17,7 @@ def addTwoNumbers(l1, l2):
         v1 = l1.val if l1 else 0
         v2 = l2.val if l2 else 0
         # new digit
-        val = v1+v2 + carry
+        val = v1 + v2 + carry
         carry = val // 10
         val = val % 10
         curr.next = ListNode(val)

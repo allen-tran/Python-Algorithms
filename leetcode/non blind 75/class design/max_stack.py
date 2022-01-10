@@ -1,5 +1,4 @@
 class MaxStack(object):
-
     def init(self):
         stack = []
         maxStack = []

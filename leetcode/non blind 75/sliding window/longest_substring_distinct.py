@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-'''
+"""
 
 
 def lengthOfLongestSubstringTwoDistinct(self, s: str) -> int:
@@ -19,6 +19,6 @@ def lengthOfLongestSubstringTwoDistinct(self, s: str) -> int:
             if frequency[left] == 0:
                 del frequency[left]
             start += 1
-        max_len = max(max_len, end-start+1)
+        max_len = max(max_len, end - start + 1)
 
     return max_len

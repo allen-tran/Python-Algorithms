@@ -1,4 +1,4 @@
-'''
+"""
 Convert a number from decimal to binary using recursion
 Step 1:
     divide the number by 2
@@ -8,7 +8,7 @@ Step 3:
     get the remained for the binary digit
 Step 3++:
     repeat the steps until the quotient is equal to 0
-'''
+"""
 
 
 def convert(dec):

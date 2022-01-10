@@ -1,4 +1,3 @@
-
 # from typing import Sequence
 
 
@@ -11,7 +10,9 @@ def binary_search(sequence, item):
         midpoint = begin_index + (end_index - begin_index) // 2
         # with the middle index we get the actual value
         midpoint_value = sequence[midpoint]
-        if midpoint_value == item:  # if the middle value is what we are looking for, return the midpoint
+        if (
+            midpoint_value == item
+        ):  # if the middle value is what we are looking for, return the midpoint
             return midpoint
         elif item < midpoint_value:  # else if the item is less than the midpoint value
             end_index = midpoint - 1  # the end index becomes the first half last value

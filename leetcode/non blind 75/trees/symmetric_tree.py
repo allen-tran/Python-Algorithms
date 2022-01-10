@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/symmetric-tree/
-'''
+"""
 
 
 class Solution:
@@ -15,4 +15,8 @@ class Solution:
         elif left == None or right == None:
             return False
         else:
-            return left.val == right.val and self.isMirror(left.left, right.right) and self.isMirror(left.right, right.left)
+            return (
+                left.val == right.val
+                and self.isMirror(left.left, right.right)
+                and self.isMirror(left.right, right.left)
+            )

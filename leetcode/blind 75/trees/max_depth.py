@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/maximum-depth-of-binary-tree/
-'''
+"""
 
 
 import collections
@@ -28,7 +28,7 @@ def maxDepth(root):
     return count
 
 
-'''
+"""
 depth first search
 def maxDepth(root):
     if not root:
@@ -36,4 +36,4 @@ def maxDepth(root):
     count = max(self.maxDepth(root.left), self.maxDepth(root.right))+1
     
     return count
-'''
+"""

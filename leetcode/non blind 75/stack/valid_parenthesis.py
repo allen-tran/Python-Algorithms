@@ -1,16 +1,16 @@
-'''
+"""
 https://leetcode.com/problems/valid-parentheses/
-'''
+"""
 
 
 def isValid(self, s: str) -> bool:
     stack = []
 
-    parenthesis = {')': '(', '}': '{', ']': '['}
+    parenthesis = {")": "(", "}": "{", "]": "["}
 
     for char in s:
         if char in parenthesis:
-            top_elem = stack.pop() if stack else '%'
+            top_elem = stack.pop() if stack else "%"
             if top_elem != parenthesis[char]:
                 return False
 

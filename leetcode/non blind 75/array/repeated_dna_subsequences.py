@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/repeated-dna-sequences/
-'''
+"""
 
 
 def findRepeatedDnaSequences(s):
@@ -9,8 +9,8 @@ def findRepeatedDnaSequences(s):
     res = []
     i = 0
 
-    while i+10 <= len(s):
-        tmp = s[i:i+10]
+    while i + 10 <= len(s):
+        tmp = s[i : i + 10]
         if tmp not in seenMap:
             seenMap[tmp] = 1
         else:

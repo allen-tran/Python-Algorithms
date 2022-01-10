@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/subtree-of-another-tree/
-'''
+"""
 
 
 class TreeNode:
@@ -30,7 +30,7 @@ def isSubEqual(s, t):
     # we move on to next case where if one of the values are equal
     elif s.val == t.val:
         # we recursively move down the left side to keep checking and the right side to keep checking
-        return isSubEqual(s.left, t.left) and isSubEqual(s.right, t. right)
+        return isSubEqual(s.left, t.left) and isSubEqual(s.right, t.right)
     # if it doesn't pass we return false
     else:
         return False

@@ -1,5 +1,5 @@
 def firstNotRepeatingCharacter(s):
-    # key: character, value: indices 
+    # key: character, value: indices
     dict = {}
     for i in range(len(s)):
         # if its not in the dictionary, create a list for it
@@ -11,7 +11,7 @@ def firstNotRepeatingCharacter(s):
     # loop through and check if there are less than two indicies
     for i in dict:
         # if there is, we can return the key
-        if  len(dict[i]) < 2:
+        if len(dict[i]) < 2:
             return i
     # if not, return '_'
-    return '_'
+    return "_"

@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/flipping-an-image/
-'''
+"""
 
 
 def flip(image):
@@ -13,7 +13,7 @@ def flip(image):
         # append the list to the double list
         doublelist.append(newList)
     # for the list in double list
-    for i in (doublelist):
+    for i in doublelist:
         # for the elements within the list of the list
         for j in range(len(i)):
             # if the element equal to 1, switch it to zero
@@ -22,7 +22,7 @@ def flip(image):
             # else, its zero, so switch it to 1
             else:
                 i[j] = 1
-     # return the new image
+    # return the new image
     return doublelist
 
 

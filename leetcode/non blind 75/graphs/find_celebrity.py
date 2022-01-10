@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/find-the-celebrity/
-'''
+"""
 
 
 def knows(i, j):

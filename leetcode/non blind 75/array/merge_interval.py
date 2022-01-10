@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/merge-intervals/
-'''
+"""
 
 
 def merge(intervals):

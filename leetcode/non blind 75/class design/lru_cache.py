@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/lru-cache/
-'''
+"""
 
 
 class Node:
@@ -22,6 +22,7 @@ class LRUcache:
     def remove(self, node):
         prev, nxt = node.prev, node.next
         prev.next, nxt.prev = nxt, prev
+
     # insert at right
 
     def insert(self, node):

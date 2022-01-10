@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/
-'''
+"""
 
 
 def removeDuplicates(nums):
@@ -12,7 +12,7 @@ def removeDuplicates(nums):
     # starting with the second number go through
     for i in range(1, len(nums)):
         # check if the number before is NOT equal to what we are looking at
-        if nums[i] != nums[i-1]:
+        if nums[i] != nums[i - 1]:
             # if not equal we found a good number and we can set it to that
             nums[len_] = nums[i]
             # increase our worker

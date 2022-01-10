@@ -1,6 +1,6 @@
-'''
+"""
 Write a function to return the maximum number of fruits in both baskets.
-'''
+"""
 
 
 def fruits_into_baskets(fruits):
@@ -20,5 +20,5 @@ def fruits_into_baskets(fruits):
             if fruit_frequency[left] == 0:
                 del fruit_frequency[left]
             start += 1
-        max_length = max(max_length, end-start+1)
+        max_length = max(max_length, end - start + 1)
     return max_length

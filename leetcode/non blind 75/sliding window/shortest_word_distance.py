@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/shortest-word-distance/
-'''
+"""
 
 
 # def shortestDistance(wordsDict, word1, word2):
@@ -19,7 +19,7 @@ https://leetcode.com/problems/shortest-word-distance/
 
 
 def shortestDistance(wordsDict, word1, word2):
-    result = float('inf')
+    result = float("inf")
     x, y = None, None
 
     for i in range(len(wordsDict)):
@@ -28,8 +28,12 @@ def shortestDistance(wordsDict, word1, word2):
         if wordsDict[i] == word2:
             y = i
         if x is not None and y is not None:
-            result = min(result, abs(x-y))
+            result = min(result, abs(x - y))
     return result
 
-print(shortestDistance(["practice", "makes", "perfect",
-      "coding", "makes"], "coding", "practice"))
+
+print(
+    shortestDistance(
+        ["practice", "makes", "perfect", "coding", "makes"], "coding", "practice"
+    )
+)

@@ -1,7 +1,7 @@
-'''
+"""
 Hybrid algorithm that is used for sort()
 Combination of merge sort and insertion sort
-'''
+"""
 
 MIN_MERGE = 32
 
@@ -110,8 +110,7 @@ def timSort(arr):
 # Driver program to test above function
 if __name__ == "__main__":
 
-    arr = [-2, 7, 15, -14, 0, 15, 0,
-           7, -7, -4, -13, 5, 8, -14, 12]
+    arr = [-2, 7, 15, -14, 0, 15, 0, 7, -7, -4, -13, 5, 8, -14, 12]
 
     print("Given Array is")
     print(arr)

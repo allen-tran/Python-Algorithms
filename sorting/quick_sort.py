@@ -1,6 +1,6 @@
-'''
+"""
 Time Complexity: O(n log n)
-'''
+"""
 
 
 def quick_sort(sequence):
@@ -15,7 +15,9 @@ def quick_sort(sequence):
     items_lower = []  # create less than list
 
     for item in sequence:  # loop through the items in the list
-        if item > pivot:  # if the item is greater than the pivot, append it to the items greater list
+        if (
+            item > pivot
+        ):  # if the item is greater than the pivot, append it to the items greater list
             items_greater.append(item)
         else:  # else append it to the items less list
             items_lower.append(item)

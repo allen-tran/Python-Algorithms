@@ -1,7 +1,7 @@
-'''
+"""
 https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 Time: O(n)
-'''
+"""
 
 
 def deleteDuplicates(head):

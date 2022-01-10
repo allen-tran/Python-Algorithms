@@ -1,6 +1,6 @@
-'''
+"""
 Amazon variation of group anagrams
-'''
+"""
 
 
 def remove(strs):

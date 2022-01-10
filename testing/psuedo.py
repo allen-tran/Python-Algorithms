@@ -1,6 +1,7 @@
 # items have their own separate class
 # items name as well as the price
 
+
 class ShoppingCart:
     init
     # dict = {}
@@ -48,6 +49,7 @@ class ShoppingCart:
     checkout
     # dont let user be able to checkout when dict is None
     # we will just have grand total
+
 
 # the store page
 

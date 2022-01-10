@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/subarray-sum-equals-k/
-'''
+"""
 
 
 def subarraySum(nums, k):
@@ -10,8 +10,8 @@ def subarraySum(nums, k):
 
     for num in nums:
         s += num
-        if s-k in prevMap:
-            count += prevMap-[s-k]
+        if s - k in prevMap:
+            count += prevMap - [s - k]
         if s in prevMap:
             prevMap[s] += 1
         else:

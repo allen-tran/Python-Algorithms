@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/pascals-triangle/
-'''
+"""
 
 
 def generate(self, numRows: int):
@@ -14,9 +14,9 @@ def generate(self, numRows: int):
         # create row to store new added values in
         row = []
         # iterate through up until the longest row + 1 because we gotta add a new number
-        for j in range(len(res[-1])+1):
+        for j in range(len(res[-1]) + 1):
             # add to the row with the numbers added
-            row.append(temp[j] + temp[j+1])
+            row.append(temp[j] + temp[j + 1])
         # add the rows to the res
         res.append(row)
     return res

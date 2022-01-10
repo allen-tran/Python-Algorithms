@@ -1,6 +1,6 @@
-'''
+"""
 https://leetcode.com/problems/implement-trie-prefix-tree/
-'''
+"""
 
 
 class TrieNode:
@@ -10,7 +10,6 @@ class TrieNode:
 
 
 class Trie:
-
     def __init__(self):
         self.root = TrieNode()
 

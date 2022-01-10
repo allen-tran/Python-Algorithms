@@ -1,6 +1,6 @@
-'''
+"""
 Given a string with lowercase letters only, if you are allowed to replace no more than k letters with any letter, find the length of the longest substring having the same letters after replacement.
-'''
+"""
 
 
 def length_of_longest_substring(str, k):
@@ -15,11 +15,11 @@ def length_of_longest_substring(str, k):
 
         max_repeat_char_count = max(max_repeat_char_count, char_freq[right])
 
-        if ((end-start+1) - max_repeat_char_count > k):
+        if (end - start + 1) - max_repeat_char_count > k:
             left = str[start]
             char_freq[left] -= 1
             start += 1
 
-        max_len = max(max_len, end-start+1)
+        max_len = max(max_len, end - start + 1)
 
     return max_len
