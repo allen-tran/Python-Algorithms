@@ -1,33 +1,68 @@
-# binary search O(log2n)
-# mid = 0
-# start, end = 0, len(end)-1
+#!/bin/python3
 
-# if the target less than the midpoint
-# set end to be midpoint
-# then split again
-# elif target greater than midpoint
-# set the start to be midpoint
-# split again
-# else return mid
-def find(arr, target):
-    # mid = None
-
-    def help(start, end):
-
-        mid = (end - start) // 2
-        if target == arr[mid]:
-            return mid
-        if start == end:
-            return -1
-        if target < arr[mid]:
-            # update end
-            end = mid
-            help(start, end)
-        elif target > arr[mid]:
-            start = mid
-            help(start, end)
-
-    return help(0, len(arr) - 1)
+import math
+import os
+import random
+import re
+import sys
 
 
-find([1, 2, 3, 4, 5], 4)
+
+#
+# Complete the 'filterBadWords' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts following parameters:
+#  1. STRING badWords
+#  2. STRING message
+#
+import re
+punc = {'\'', '.', '"', '!', ')', '(', '?', ','}
+
+def removePuncuation(word):
+    for p in punc:
+        word = word.replace(p, '')
+    return word
+def filterBadWords(badWords, message):
+    # Write your code here
+    # setter = set(badWords.split(' '))
+    # new_message = message.split(' ')
+    # print(setter)
+    # for i in range(len(new_message)):
+    #     print(new_message[i])
+    #     if str(new_message[i]) in setter:
+    #         new_message[i] = '*' * len(new_message[i])
+            
+    # return " ".join(new_message)
+    regex_bad_words = [ ('^' + x.replace('*', '.*') + '$', x.replace('*', '')) for x in badWords.split(' ')]
+    new_message = message.split(' ') 
+    for i in range(len(new_message)):
+        word = new_message[i]
+        word = word.lower()
+        word = removePuncuation(word)
+        for reg, bad in regex_bad_words:
+            if bool(re.match(reg, word)):
+                print(re.match(reg, word))
+                index = new_message[i].lower().index(bad)
+                replace = [x for x in new_message[i]]
+                for j in range(len(replace)):
+                    if replace[j] not in punc: replace[j] = '*'
+                new_message[i] = ''.join(replace)
+                break
+    return ' '.join(new_message)
+                    
+            
+    
+        
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    badWords = input()
+
+    message = input()
+
+    result = filterBadWords(badWords, message)
+
+    fptr.write(result + '\n')
+
+    fptr.close()

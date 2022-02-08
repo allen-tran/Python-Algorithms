@@ -7,6 +7,6 @@ def detectCapitalUse(word):
         for i in range(1, len(word)):
             if word[i].isupper():
                 return False
-            
+
         return True
     return False
