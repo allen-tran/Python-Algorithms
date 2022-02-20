@@ -1,4 +1,4 @@
-# Python Algorithms 🐍
+# Python Data Structures & Algorithms 🐍
 
 All things Python algorithm related with detailed comments.
 
